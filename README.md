@@ -2,5 +2,5 @@
 
 Plaid Link for Flutter (web and android).
 
-![](docs/web_demo.gif)
-![](docs/android_demo.gif)
+![](doc/web_demo.gif)
+![](doc/android_demo.gif)

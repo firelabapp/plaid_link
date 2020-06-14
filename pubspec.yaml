@@ -1,7 +1,6 @@
 name: plaid_link
 description: Plaid Link for Flutter.
 version: 0.0.1
-author: Keenan Thompson
 homepage: https://keenant.com
 
 environment:

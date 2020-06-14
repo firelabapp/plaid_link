@@ -17,7 +17,7 @@ void main() {
 // Options can be const if desired.
 const plaidLinkOptions = const PlaidLinkOptions(
   clientName: 'Plaid Link Example',
-  publicKey: '9a843fad3c3a08f45845c921947f83',
+  publicKey: 'YOUR_PLAID_PUBLIC_KEY',
   env: PlaidEnv.sandbox,
   products: [PlaidProduct.auth],
   language: 'en',
