@@ -1,5 +1,5 @@
 name: plaid_link_example
-description: Demonstrates how to use the plaidlink plugin.
+description: Demonstrates how to use the plaid_link plugin.
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
