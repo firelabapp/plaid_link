@@ -1,0 +1,30 @@
+name: plaid_link
+description: Plaid Link for Flutter.
+version: 0.0.1
+author: Keenan Thompson
+homepage: https://keenant.com
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  js: ^0.6.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: app.firelab.plaidlink
+        pluginClass: PlaidLinkPlugin
+      web:
+        pluginClass: PlaidLinkPlugin
+        fileName: plaid_link_web.dart
