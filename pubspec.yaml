@@ -1,6 +1,9 @@
 name: plaid_link
-description: Plaid Link for Flutter.
-version: 0.0.3
+description: >
+  Plaid Link for Flutter. Integrate financial accounts into your
+  Flutter applications. Learn more about Plaid Link at
+  https://plaid.com/docs/#creating-items-with-plaid-link
+version: 0.0.4
 homepage: https://github.com/firelab-app/plaid_link
 repository: https://github.com/firelab-app/plaid_link
 
