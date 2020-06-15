@@ -69,7 +69,8 @@ class PlaidJsOptions {
     String oauthStateId,
     String paymentToken,
     void Function() onLoad,
-    void Function(String publicToken, PlaidJsSuccessMetadata metadata) onSuccess,
+    void Function(String publicToken, PlaidJsSuccessMetadata metadata)
+        onSuccess,
     void Function(PlaidJsError error, PlaidJsExitMetadata metadata) onExit,
     void Function(String eventName, PlaidJsEventMetadata metadata) onEvent,
   });

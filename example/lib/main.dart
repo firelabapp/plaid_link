@@ -56,7 +56,8 @@ class AppContent extends StatelessWidget {
                 Text('Successful Plaid Link'),
                 Text('publicToken: $publicToken'),
                 Text('linkSessionId: ${metadata.linkSessionId}'),
-                Text('accounts.name: ${metadata.accounts.map((a) => a.name).toList()}'),
+                Text(
+                    'accounts.name: ${metadata.accounts.map((a) => a.name).toList()}'),
                 Text('institution.name: ${metadata.institution.name}'),
               ],
             ),

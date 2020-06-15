@@ -49,14 +49,10 @@ class PlaidLinkPlugin {
         PlaidJsAccountSubtypeOptions accountSubtypes;
         if (arguments['accountSubtypes'] != null) {
           List<PlaidAccountSubtype> accountSubtypesList =
-          (arguments['accountSubtypes'] as List<dynamic>)
-              .map((e) =>
-              PlaidAccountSubtype.values.firstWhere((element) =>
-              element
-                  .toString()
-                  .split('.')
-                  .last == e.toString()))
-              .toList();
+              (arguments['accountSubtypes'] as List<dynamic>)
+                  .map((e) => PlaidAccountSubtype.values.firstWhere((element) =>
+                      element.toString().split('.').last == e.toString()))
+                  .toList();
 
           accountSubtypes = PlaidJsAccountSubtypeOptions();
           accountSubtypesList.forEach((subtype) {
@@ -159,7 +155,8 @@ Map<String, dynamic> _eventMetadataMap(PlaidJsEventMetadata metadata) {
     'errorType': metadata.error_type,
     'exitStatus': metadata.exit_status,
     'institution': () {
-      if (metadata.institution_id != null && metadata.institution_name != null) {
+      if (metadata.institution_id != null &&
+          metadata.institution_name != null) {
         return {
           'id': metadata.institution_id,
           'name': metadata.institution_name,

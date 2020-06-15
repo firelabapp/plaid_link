@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 /// Entry point to the Plaid Link SDK (platform-independent).
-/// 
+///
 /// For up-to-date and more detailed documentation, see the Plaid docs:
 /// https://plaid.com/docs/#integrating-with-link
 class PlaidLink {
   static MethodChannel _channel = MethodChannel('plaid_link');
 
   /// Starts the Plaid Link interface.
-  /// Returns a future which resolves once the call is complete. 
+  /// Returns a future which resolves once the call is complete.
   /// Callbacks may be passed in to respond to various events.
   static Future<void> open(
     PlaidLinkOptions options, {
@@ -73,7 +73,7 @@ class PlaidLink {
 }
 
 /// Plaid open options (passed to the platform plugin).
-/// 
+///
 /// For up-to-date and more detailed documentation, see the Plaid docs:
 /// https://plaid.com/docs/#integrating-with-link
 class PlaidLinkOptions {
@@ -258,14 +258,19 @@ class PlaidAccount {
 
   /// The account id.
   final String id;
+
   /// The account name.
   final String name;
+
   /// The account number (masked).
   final String mask;
+
   /// The account type.
   final String type;
+
   /// The account subtype.
   final String subtype;
+
   /// The accounts verification status.
   final String verificationStatus;
 }
@@ -407,10 +412,10 @@ class PlaidEventMetadata {
 
   /// The exit status.
   final String exitStatus;
-  
+
   /// The institution associated with the event.
   final PlaidInstitution institution;
-  
+
   /// The institution search query.
   final String institutionSearchQuery;
 
@@ -419,7 +424,7 @@ class PlaidEventMetadata {
 
   /// The mfa type.
   final String mfaType;
-  
+
   /// The request id.
   final String requestId;
 
