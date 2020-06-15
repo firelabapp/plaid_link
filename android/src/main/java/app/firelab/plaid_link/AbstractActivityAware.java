@@ -1,4 +1,4 @@
-package app.firelab.plaidlink;
+package app.firelab.plaid_link;
 
 import androidx.annotation.NonNull;
 

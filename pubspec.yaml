@@ -23,7 +23,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: app.firelab.plaidlink
+        package: app.firelab.plaid_link
         pluginClass: PlaidLinkPlugin
       web:
         pluginClass: PlaidLinkPlugin

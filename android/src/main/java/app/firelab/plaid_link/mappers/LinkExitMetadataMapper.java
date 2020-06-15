@@ -1,6 +1,6 @@
-package app.firelab.plaidlink.mappers;
+package app.firelab.plaid_link.mappers;
 
-import app.firelab.plaidlink.ArgumentMapper;
+import app.firelab.plaid_link.ArgumentMapper;
 import com.plaid.link.result.LinkExitMetadata;
 import com.plaid.link.result.LinkExitMetadataStatus;
 import java.util.HashMap;

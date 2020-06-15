@@ -1,11 +1,11 @@
 @JS()
-library plaid;
+library _plaid_js;
 
 import 'package:js/js.dart';
 
-@JS()
-class Plaid {
-  external static Plaid create(PlaidOptions options);
+@JS("Plaid")
+class PlaidJs {
+  external static PlaidJs create(PlaidJsOptions options);
 
   external void open();
 
@@ -16,7 +16,7 @@ class Plaid {
 
 @JS()
 @anonymous
-class PlaidOptions {
+class PlaidJsOptions {
   external String get clientName;
 
   external List<dynamic> get countryCodes;
@@ -53,7 +53,7 @@ class PlaidOptions {
 
   external void Function(String eventName, dynamic metadata) get onEvent;
 
-  external factory PlaidOptions({
+  external factory PlaidJsOptions({
     String clientName,
     List<String> countryCodes,
     String key,

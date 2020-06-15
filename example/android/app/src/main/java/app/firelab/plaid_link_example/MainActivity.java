@@ -1,4 +1,4 @@
-package app.firelab.plaidlink_example;
+package app.firelab.plaid_link_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

@@ -1,4 +1,4 @@
-package app.firelab.plaidlink;
+package app.firelab.plaid_link;
 
 import com.plaid.link.configuration.AccountSubtype;
 import com.plaid.link.configuration.AccountSubtype.CREDIT.CREDIT_CARD;

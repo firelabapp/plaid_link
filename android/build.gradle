@@ -1,4 +1,4 @@
-group 'app.firelab.plaidlink'
+group 'app.firelab.plaid_link'
 version '1.0'
 
 buildscript {

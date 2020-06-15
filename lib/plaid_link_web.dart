@@ -7,6 +7,7 @@ import 'package:js/js.dart';
 import 'package:plaid_link/plaid_js.dart';
 import 'package:plaid_link/plaid_link.dart';
 
+/// Plugin for enabling Plaid Link on the web.
 class PlaidLinkPlugin {
   final MethodChannel _channel;
 
@@ -94,7 +95,7 @@ class PlaidLinkPlugin {
           });
         }
 
-        Plaid.create(PlaidOptions(
+        PlaidJs.create(PlaidJsOptions(
           clientName: clientName,
           key: publicKey,
           env: env,
@@ -139,6 +140,15 @@ class PlaidLinkPlugin {
             details: "The plaid_link plugin for web doesn't implement "
                 "the method '${call.method}'");
     }
+  }
+}
+
+extension _PlaidAccountSubtypeExtension on PlaidAccountSubtype {
+  String get plaidTypeName => toString().split('.').last.split('_').first;
+
+  String get plaidSubtypeName {
+    final full = toString().split('.').last;
+    return full.substring(full.indexOf('_'));
   }
 }
 

@@ -1,11 +1,11 @@
-package app.firelab.plaidlink;
+package app.firelab.plaid_link;
 
 import android.app.Activity;
 import android.content.Intent;
 import androidx.annotation.NonNull;
-import app.firelab.plaidlink.mappers.LinkEventMapper;
-import app.firelab.plaidlink.mappers.LinkExitMapper;
-import app.firelab.plaidlink.mappers.LinkSuccessMapper;
+import app.firelab.plaid_link.mappers.LinkEventMapper;
+import app.firelab.plaid_link.mappers.LinkExitMapper;
+import app.firelab.plaid_link.mappers.LinkSuccessMapper;
 import com.plaid.link.Plaid;
 import com.plaid.link.configuration.AccountSubtype;
 import com.plaid.link.configuration.LinkConfiguration;
