@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.3
+
+* Add some documentation, make internal libs private.
+
 ## 0.0.2
 
 * Make repo public.
