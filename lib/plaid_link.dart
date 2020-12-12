@@ -77,12 +77,12 @@ class PlaidLink {
 /// For up-to-date and more detailed documentation, see the Plaid docs:
 /// https://plaid.com/docs/#integrating-with-link
 class PlaidLinkOptions {
-  const PlaidLinkOptions({
+  PlaidLinkOptions({
     @required this.clientName,
     @required this.env,
     @required this.products,
     this.publicToken,
-    this.publicKey,
+    this.linkToken,
     this.webhook,
     this.accountSubtypes,
     this.linkCustomizationName,
@@ -100,7 +100,7 @@ class PlaidLinkOptions {
   final String publicToken;
 
   /// The public key for your Plaid account.
-  final String publicKey;
+  final String linkToken;
 
   /// The webhook to use for receiving item/transaction updates from Plaid.
   final String webhook;
@@ -126,7 +126,7 @@ class PlaidLinkOptions {
       'env': env == null ? null : _asEnumName(env),
       'products': products?.map((e) => _asEnumName(e))?.toList(),
       'publicToken': publicToken,
-      'publicKey': publicKey,
+      'linkToken': linkToken,
       'webhook': webhook,
       'accountSubtypes': accountSubtypes?.map((e) => _asEnumName(e))?.toList(),
       'linkCustomizationName': linkCustomizationName,
