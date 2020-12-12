@@ -30,7 +30,7 @@ class PlaidLinkPlugin {
         final Map<dynamic, dynamic> arguments = call.arguments;
 
         String clientName = arguments['clientName'];
-        String publicKey = arguments['publicKey'];
+        String linkToken = arguments['linkToken'];
         String env = arguments['env'];
         String language = arguments['language'];
         String publicToken = arguments['publicToken'];
@@ -93,7 +93,7 @@ class PlaidLinkPlugin {
 
         PlaidJs.create(PlaidJsOptions(
           clientName: clientName,
-          key: publicKey,
+          key: linkToken,
           env: env,
           token: publicToken,
           language: language,
